@@ -12,6 +12,13 @@
   padding: 0 1.5rem;
 }
 
+.navbar-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .navbar-title {
   font-family: "Fraunces", serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -52,9 +59,35 @@
   margin: 0;
 }
 
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(244, 241, 234, 0.35);
+  border-radius: 6px;
+  color: #f4f1ea;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.65rem 0.9rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: #f5a623;
+  color: #f5a623;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #f5a623;
+  outline-offset: 2px;
+}
+
 @media (max-width: 480px) {
   .navbar {
     padding: 1.5rem 0 1.25rem;
+  }
+  .navbar-top {
+    align-items: flex-start;
   }
   .navbar-ticks {
     gap: 4px;

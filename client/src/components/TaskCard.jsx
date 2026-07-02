@@ -33,15 +33,7 @@ function TaskCard({ task, onEdit, onDelete }) {
 
         <button
           className="delete-btn"
-          onClick={() => {
-            const confirmDelete = window.confirm(
-              "Are you sure you want to delete this task?",
-            );
-
-            if (confirmDelete) {
-              onDelete(_id);
-            }
-          }}
+          onClick={() => onDelete(task)}
         >
           Delete
         </button>
