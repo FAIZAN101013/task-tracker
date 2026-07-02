@@ -1,0 +1,129 @@
+.task-card {
+  background: #fff;
+  border: 1px solid #e7e3d9;
+  border-radius: 8px;
+  padding: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(26, 31, 46, 0.08);
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.task-card-header h3 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1f2e;
+}
+
+.task-description {
+  margin: 0 0 1.2rem;
+  color: #5b6478;
+  line-height: 1.6;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.status,
+.priority {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.priority.high {
+  background: #fde3e3;
+  color: #b42318;
+}
+
+.priority.medium {
+  background: #fef2d6;
+  color: #b45309;
+}
+
+.priority.low {
+  background: #e3f0e6;
+  color: #15803d;
+}
+
+.status.pending {
+  background: #f1f0ec;
+  color: #5b6478;
+}
+
+.status.in-progress {
+  background: #fef2d6;
+  color: #b45309;
+}
+
+.status.completed {
+  background: #e3f0e6;
+  color: #15803d;
+}
+
+.due-date {
+  color: #9095a3;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  border: 1px solid #d8d4c8;
+  background: #fff;
+  color: #1a1f2e;
+}
+
+.edit-btn:hover {
+  background: #f4f1ea;
+}
+
+.delete-btn {
+  border: 1px solid #f3d4d4;
+  background: #fff;
+  color: #b42318;
+}
+
+.delete-btn:hover {
+  background: #fde3e3;
+}
+
+.edit-btn:focus-visible,
+.delete-btn:focus-visible {
+  outline: 2px solid #f5a623;
+  outline-offset: 2px;
+}

@@ -1,3 +1,38 @@
+.task-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  max-width: 650px;
+
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 8px;
+  border: 1px solid #e7e3d9;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+  z-index: 1000;
+}
+.task-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #5b6478;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #1a1f2e;
+}
 
 .task-form-eyebrow {
   display: block;
@@ -40,7 +75,7 @@
 .form-group textarea,
 .form-group select {
   width: 100%;
-  padding: 0.75rem 0.85rem  0.75rem 0.85rem;
+  padding: 0.75rem 0.85rem;
   border: 1px solid #d8d4c8;
   border-radius: 6px;
   font-size: 0.95rem;
@@ -48,6 +83,16 @@
   color: #1a1f2e;
   outline: none;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235b6478' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  padding-right: 2.2rem;
+  cursor: pointer;
 }
 
 .form-group input:focus,
@@ -58,7 +103,7 @@
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .btn {
@@ -82,4 +127,17 @@ textarea {
 .btn:focus-visible {
   outline: 2px solid #f5a623;
   outline-offset: 2px;
+}
+
+.form-row-bottom {
+  align-items: end;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group .btn {
+  margin-top: auto;
 }
