@@ -1,0 +1,110 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  background: var(--page-bg);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 18px 40px var(--shadow-soft);
+}
+
+.auth-eyebrow {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.auth-card h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem;
+  color: var(--text-primary);
+}
+
+.auth-subtitle {
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.auth-card .form-group label {
+  color: var(--text-muted);
+}
+
+.auth-card .form-group input {
+  background: var(--surface);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.auth-error {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  background: var(--danger-bg);
+  color: var(--danger-dark);
+  border: 1px solid rgba(180, 35, 24, 0.25);
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.field-error {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--danger);
+}
+
+.form-group input[aria-invalid="true"] {
+  border-color: var(--danger);
+}
+
+.auth-card .btn {
+  margin-top: 0.4rem;
+  background: var(--text-primary);
+  color: var(--page-bg);
+}
+
+.auth-card .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.auth-footer a {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+
+.auth-footer a:hover {
+  color: var(--accent);
+}
+
+.auth-hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.76rem;
+  color: var(--text-subtle);
+}
